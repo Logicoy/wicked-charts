@@ -88,6 +88,8 @@ public abstract class Series<D> implements Serializable {
 	private Boolean enableMouseTracking;
 
 	private Integer wickedChartsId;
+        
+        private Number pointWidth;
 
 	/**
 	 * Sets the Wicked Charts specific ID for this Point.
@@ -184,6 +186,15 @@ public abstract class Series<D> implements Serializable {
 	public Integer getyAxis() {
 		return this.yAxis;
 	}
+
+        public Number getPointWidth() {
+            return pointWidth;
+        }
+
+        public Series<D> setPointWidth(Number pointWidth) {
+            this.pointWidth = pointWidth;
+            return this;
+        }
 
 	public Series<D> setCenter(final Center center) {
 		this.center = center;
