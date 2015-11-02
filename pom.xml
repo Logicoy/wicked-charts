@@ -179,5 +179,13 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+    <distributionManagement>
+        <repository>
+            <id>logicoy-internal</id>
+            <name>Logicoy internal builds</name>
+            <url>http://54.225.141.138:8081/nexus/content/repositories/internal</url>
+            <layout>default</layout>
+          </repository>
 
+    </distributionManagement>
 </project>
